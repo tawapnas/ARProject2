@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33E734721A6458200AAFF13 /* Fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D33E734521A6458200AAFF13 /* Fire.scnp */; };
+		D33E734821A6458200AAFF13 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D33E734621A6458200AAFF13 /* spark.png */; };
 		D34D557521A1525D008D30EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D557421A1525D008D30EF /* AppDelegate.swift */; };
 		D34D557721A1525D008D30EF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D34D557621A1525D008D30EF /* art.scnassets */; };
 		D34D557921A1525D008D30EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D557821A1525D008D30EF /* ViewController.swift */; };
 		D34D557C21A1525D008D30EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34D557A21A1525D008D30EF /* Main.storyboard */; };
 		D34D557E21A15260008D30EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34D557D21A15260008D30EF /* Assets.xcassets */; };
 		D34D558121A15260008D30EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34D557F21A15260008D30EF /* LaunchScreen.storyboard */; };
+		D38F3C8521A507F1004E6C17 /* crosshair-transparent-6.png in Resources */ = {isa = PBXBuildFile; fileRef = D38F3C8421A507F0004E6C17 /* crosshair-transparent-6.png */; };
+		D38F3C8721A50FEF004E6C17 /* 26637-200.png in Resources */ = {isa = PBXBuildFile; fileRef = D38F3C8621A50FEE004E6C17 /* 26637-200.png */; };
+		D3B9DE6F21A65084005D2663 /* Smoke.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D3B9DE6D21A65084005D2663 /* Smoke.scnp */; };
+		D3B9DE7021A65084005D2663 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B9DE6E21A65084005D2663 /* smoke.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D33E734521A6458200AAFF13 /* Fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Fire.scnp; sourceTree = "<group>"; };
+		D33E734621A6458200AAFF13 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		D34D557121A1525D008D30EF /* ARProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34D557421A1525D008D30EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D34D557621A1525D008D30EF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		D34D557D21A15260008D30EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34D558021A15260008D30EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D34D558221A15260008D30EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D38F3C8421A507F0004E6C17 /* crosshair-transparent-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crosshair-transparent-6.png"; sourceTree = "<group>"; };
+		D38F3C8621A50FEE004E6C17 /* 26637-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "26637-200.png"; sourceTree = "<group>"; };
+		D3B9DE6D21A65084005D2663 /* Smoke.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Smoke.scnp; sourceTree = "<group>"; };
+		D3B9DE6E21A65084005D2663 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D33E734421A6454F00AAFF13 /* ParticleSystem */ = {
+			isa = PBXGroup;
+			children = (
+				D33E734521A6458200AAFF13 /* Fire.scnp */,
+				D33E734621A6458200AAFF13 /* spark.png */,
+				D3B9DE6D21A65084005D2663 /* Smoke.scnp */,
+				D3B9DE6E21A65084005D2663 /* smoke.png */,
+			);
+			path = ParticleSystem;
+			sourceTree = "<group>";
+		};
 		D34D556821A1525D008D30EF = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +79,14 @@
 		D34D557321A1525D008D30EF /* ARProject2 */ = {
 			isa = PBXGroup;
 			children = (
+				D33E734421A6454F00AAFF13 /* ParticleSystem */,
 				D34D557421A1525D008D30EF /* AppDelegate.swift */,
 				D34D557621A1525D008D30EF /* art.scnassets */,
 				D34D557821A1525D008D30EF /* ViewController.swift */,
 				D34D557A21A1525D008D30EF /* Main.storyboard */,
 				D34D557D21A15260008D30EF /* Assets.xcassets */,
+				D38F3C8621A50FEE004E6C17 /* 26637-200.png */,
+				D38F3C8421A507F0004E6C17 /* crosshair-transparent-6.png */,
 				D34D557F21A15260008D30EF /* LaunchScreen.storyboard */,
 				D34D558221A15260008D30EF /* Info.plist */,
 			);
@@ -126,8 +152,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34D557721A1525D008D30EF /* art.scnassets in Resources */,
+				D33E734721A6458200AAFF13 /* Fire.scnp in Resources */,
 				D34D558121A15260008D30EF /* LaunchScreen.storyboard in Resources */,
 				D34D557E21A15260008D30EF /* Assets.xcassets in Resources */,
+				D38F3C8721A50FEF004E6C17 /* 26637-200.png in Resources */,
+				D3B9DE6F21A65084005D2663 /* Smoke.scnp in Resources */,
+				D33E734821A6458200AAFF13 /* spark.png in Resources */,
+				D3B9DE7021A65084005D2663 /* smoke.png in Resources */,
+				D38F3C8521A507F1004E6C17 /* crosshair-transparent-6.png in Resources */,
 				D34D557C21A1525D008D30EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JV6WJXYQU;
 				INFOPLIST_FILE = ARProject2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JV6WJXYQU;
 				INFOPLIST_FILE = ARProject2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
