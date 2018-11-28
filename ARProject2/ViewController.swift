@@ -22,6 +22,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, SC
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var crashed: UILabel!
+    @IBOutlet weak var crossHair: UIImageView!
     
     var lastNode: SCNNode?
     var player: SCNNode?
@@ -29,6 +30,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, SC
     var timer = Timer()
     var count = 0
     var crashedTime = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -136,10 +138,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, SC
     @objc func tapped(recognizer: UITapGestureRecognizer){
         //let touchLocation = recognizer.location(in: sceneView)
         let centerPoint = CGPoint(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.5)
-        print(centerPoint)
         let hitResults = sceneView.hitTest(centerPoint)
+        let starEmitter = createStar()
         if let hitResultsWithFeaturePoint = hitResults.first?.node{
             if(hitResultsWithFeaturePoint.physicsBody?.categoryBitMask == bodyType.box.rawValue){
+                sceneView.scene.addParticleSystem(starEmitter, transform: hitResultsWithFeaturePoint.worldTransform)
                 hitResultsWithFeaturePoint.removeFromParentNode()
                 count+=1
                 print(count)
@@ -172,18 +175,28 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, SC
         let fire = SCNParticleSystem(named: "Fire", inDirectory: nil)
         return fire!
     }
+    func createStar() -> SCNParticleSystem{
+        let star = SCNParticleSystem(named: "Star", inDirectory: nil)
+        return star!
+    }
+    func createExposion() -> SCNParticleSystem{
+        let explostion = SCNParticleSystem(named: "Explosion", inDirectory: nil)
+        return explostion!
+    }
     
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
         
         if (contact.nodeA.physicsBody?.categoryBitMask == bodyType.box.rawValue && contact.nodeB.physicsBody?.categoryBitMask == bodyType.earth.rawValue){
             
             print("Crashed B is Earth")
+            sceneView.scene.addParticleSystem(createExposion(), transform: contact.nodeA.worldTransform)
             contact.nodeA.removeFromParentNode()
             crashedTime+=1
             crashed.text = "Crashed: \(crashedTime)"
         }
         else if(contact.nodeA.physicsBody?.categoryBitMask == bodyType.earth.rawValue && contact.nodeB.physicsBody?.categoryBitMask == bodyType.box.rawValue){
             
+            sceneView.scene.addParticleSystem(createExposion(), transform: contact.nodeB.worldTransform)
             print("Crashed A is Earth ")
             contact.nodeB.removeFromParentNode()
             crashedTime+=1

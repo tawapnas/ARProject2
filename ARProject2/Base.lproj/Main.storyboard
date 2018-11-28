@@ -55,6 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="crashed" destination="dlq-Pd-gDS" id="mxT-HZ-3zH"/>
+                        <outlet property="crossHair" destination="hhV-yg-tuq" id="40B-U3-bOk"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                         <outlet property="score" destination="7An-lb-XeL" id="K5Y-Ie-IH4"/>
                     </connections>

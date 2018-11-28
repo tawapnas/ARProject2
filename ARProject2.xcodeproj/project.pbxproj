@@ -17,8 +17,10 @@
 		D34D558121A15260008D30EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34D557F21A15260008D30EF /* LaunchScreen.storyboard */; };
 		D38F3C8521A507F1004E6C17 /* crosshair-transparent-6.png in Resources */ = {isa = PBXBuildFile; fileRef = D38F3C8421A507F0004E6C17 /* crosshair-transparent-6.png */; };
 		D38F3C8721A50FEF004E6C17 /* 26637-200.png in Resources */ = {isa = PBXBuildFile; fileRef = D38F3C8621A50FEE004E6C17 /* 26637-200.png */; };
-		D3B9DE6F21A65084005D2663 /* Smoke.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D3B9DE6D21A65084005D2663 /* Smoke.scnp */; };
+		D3B9DE6F21A65084005D2663 /* Star.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D3B9DE6D21A65084005D2663 /* Star.scnp */; };
 		D3B9DE7021A65084005D2663 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B9DE6E21A65084005D2663 /* smoke.png */; };
+		D3E5520721ADAFA200010A75 /* purepng.com-gold-starstargeometricallydecagonconcavestardomyellow-stargold-1421526501456pnucr.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E5520621ADAFA200010A75 /* purepng.com-gold-starstargeometricallydecagonconcavestardomyellow-stargold-1421526501456pnucr.png */; };
+		D3E5520921ADBE3400010A75 /* Explosion.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D3E5520821ADBE3400010A75 /* Explosion.scnp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +36,10 @@
 		D34D558221A15260008D30EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D38F3C8421A507F0004E6C17 /* crosshair-transparent-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crosshair-transparent-6.png"; sourceTree = "<group>"; };
 		D38F3C8621A50FEE004E6C17 /* 26637-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "26637-200.png"; sourceTree = "<group>"; };
-		D3B9DE6D21A65084005D2663 /* Smoke.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Smoke.scnp; sourceTree = "<group>"; };
+		D3B9DE6D21A65084005D2663 /* Star.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Star.scnp; sourceTree = "<group>"; };
 		D3B9DE6E21A65084005D2663 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		D3E5520621ADAFA200010A75 /* purepng.com-gold-starstargeometricallydecagonconcavestardomyellow-stargold-1421526501456pnucr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purepng.com-gold-starstargeometricallydecagonconcavestardomyellow-stargold-1421526501456pnucr.png"; sourceTree = "<group>"; };
+		D3E5520821ADBE3400010A75 /* Explosion.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Explosion.scnp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,12 @@
 		D33E734421A6454F00AAFF13 /* ParticleSystem */ = {
 			isa = PBXGroup;
 			children = (
+				D3E5520621ADAFA200010A75 /* purepng.com-gold-starstargeometricallydecagonconcavestardomyellow-stargold-1421526501456pnucr.png */,
 				D33E734521A6458200AAFF13 /* Fire.scnp */,
 				D33E734621A6458200AAFF13 /* spark.png */,
-				D3B9DE6D21A65084005D2663 /* Smoke.scnp */,
+				D3B9DE6D21A65084005D2663 /* Star.scnp */,
 				D3B9DE6E21A65084005D2663 /* smoke.png */,
+				D3E5520821ADBE3400010A75 /* Explosion.scnp */,
 			);
 			path = ParticleSystem;
 			sourceTree = "<group>";
@@ -152,11 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34D557721A1525D008D30EF /* art.scnassets in Resources */,
+				D3E5520921ADBE3400010A75 /* Explosion.scnp in Resources */,
 				D33E734721A6458200AAFF13 /* Fire.scnp in Resources */,
 				D34D558121A15260008D30EF /* LaunchScreen.storyboard in Resources */,
 				D34D557E21A15260008D30EF /* Assets.xcassets in Resources */,
 				D38F3C8721A50FEF004E6C17 /* 26637-200.png in Resources */,
-				D3B9DE6F21A65084005D2663 /* Smoke.scnp in Resources */,
+				D3B9DE6F21A65084005D2663 /* Star.scnp in Resources */,
+				D3E5520721ADAFA200010A75 /* purepng.com-gold-starstargeometricallydecagonconcavestardomyellow-stargold-1421526501456pnucr.png in Resources */,
 				D33E734821A6458200AAFF13 /* spark.png in Resources */,
 				D3B9DE7021A65084005D2663 /* smoke.png in Resources */,
 				D38F3C8521A507F1004E6C17 /* crosshair-transparent-6.png in Resources */,
